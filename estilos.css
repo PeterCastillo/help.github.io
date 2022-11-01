@@ -1,0 +1,540 @@
+:root {
+    --colorprincipal: #4b22f4;
+    --colortabs: #878fb8;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+
+    max-width: 100%;
+}
+
+.cabecera {
+    background-color: var(--colorprincipal);
+    background: linear-gradient(90deg, #4b22f4 60%, #ffff 20%);
+
+}
+.menuresp{
+    display: none;
+}
+.cajalogonav{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+   
+}
+.contenedor {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--colorprincipal);
+    background: linear-gradient(90deg, #4b22f4 60%, #ffff 20%);
+    margin: 0 auto;
+}
+.logo{
+    list-style: none;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+.menuresponsive{
+    display: none;
+}
+
+.menuresp{
+    display: none;
+    background-color: red;
+}
+.listanavegacion {
+    display: flex;
+    gap: 2.5rem;
+}
+
+li {
+    list-style: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+.botonesRegistro {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.botonuno {
+    border-color: var(--colorprincipal);
+    color: var(--colorprincipal);
+    background-color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.botones {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.botondos {
+    color: var(--colorprincipal);
+    font-weight: 700;
+    border: none;
+    font-size: 16px;
+    background-color: var(--colorprincipal);
+    color: white;
+    padding: 1rem 3.5rem;
+    cursor: pointer;
+}
+
+/**Banner1**/
+
+.banner1 {
+    background-color: var(--colorprincipal);
+    background: linear-gradient(90deg, #4b22f4 59%, #ffff 50%);
+}
+
+.contenedorbanner1 {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.cajacontenedor1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+h1.titulo {
+    font-size: 7.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
+    line-height: 68px;
+    padding-bottom: 2rem;
+}
+
+.parrafo1 {
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+    font-weight: 400;
+}
+
+.botonesbanner1 {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    align-self: flex-start;
+    padding-top: 4rem;
+}
+
+.botonbanner1 {
+    padding: 1.2rem 3.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: var(--colorprincipal);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.botondosbanner1 {
+    border-radius: 1rem;
+    border: none;
+    padding: 1.2rem 3.5rem;
+    background-color: var(--colorprincipal);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.imagenbanner1 {
+    width: 100%;
+    max-width: 100%;
+}
+
+.width {
+    width: 100%;
+    max-width: 100%;
+    min-width: 530px;
+
+}
+.display{
+    display: block;
+}
+/**IMAGENESMARCAS**/
+
+.imagenesempresas {
+    width: 100%;
+}
+
+.contenedorimagenes {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    margin: 0 auto;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+.mil {
+    font-size: 20px;
+    color: var(--colorprincipal);
+    margin-right: 2rem;
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 0.4rem;
+}
+
+.marcas {
+    height: 30px;
+    margin-top: 3rem;
+}
+
+.imagenesimagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.allinone {
+    text-align: center;
+    font-size: 4rem;
+    line-height: 64px;
+    font-weight: 700;
+    padding: 8rem 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.cajatabs {
+    display: flex;
+    justify-content: center;
+    gap: 4.5rem;
+}
+.bannertabs{
+    width: 100%;
+    background-color: #f6f7f9;
+
+}
+.tab-content{
+    margin-top: 3rem;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f6f7f9;
+}
+.listatab {
+    color: var(--colortabs);
+    padding-bottom: 1rem;
+}
+
+.listatab:hover {
+    color: grey
+}
+
+.listatab:active {
+    color: var(--colorprincipal);
+    border-bottom: 3px solid var(--colorprincipal);
+}
+
+.titulotabs1{
+    color: var(--colorprincipal);
+    font-size: 3.2rem;
+    line-height: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 3rem 0;
+}
+.parrafotabs1{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 500;
+    color: #181b32;
+    text-align: center;
+    margin-top: 3rem;
+ 
+}
+
+.cajastabs{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #181b32;
+    line-height: 18px;
+    margin-top: 3rem;
+    padding-bottom: 4rem;
+    
+}
+
+.caja1tabs{
+    background-color: white;
+    padding: 3.5rem;
+    color: #55494f ;
+}
+.contenedorslider{
+    display: flex;
+}
+.track, .tracks{
+    overflow: hidden;
+    animation: scroll 40s linear infinite;
+    
+}
+
+/* 1075px */
+@media (max-width:750px) {
+    section.banner1,
+    .cabecera,
+    .botonesRegistro,
+    div.contenedor {
+        background: var(--colorprincipal);
+    }
+
+
+    .contenedorbanner1 {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .cajacontenedor1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .imagenbanner1 {
+        margin-top: -4rem;
+        min-width: 300px;
+    }
+
+    h1.titulo {
+        text-align: center;
+        padding-top: 5rem;
+    }
+
+    .botonesbanner1 {
+        margin: 0 auto;
+    }
+
+    .imagenesempresas {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .contenedorimagenes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        margin-top: 2rem;
+    }
+
+    .subtitulo {
+        font-size: 2.5rem;
+        text-align: center;
+
+    }
+
+    .mil {
+        font-size: 3rem;
+    }
+
+    .imagenesimagenes {
+        padding-bottom: 3rem;
+    }
+
+    .allinone {
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+    .cajastabs{
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+    .caja1tabs{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    max-width: 30rem;
+    text-align: center;
+    }
+    .navegacion{
+        display: none;
+       
+    }
+    .contenedor{
+        position: relative;
+       padding-top: 3rem;
+       display: flex;
+       align-items: center;
+       
+    }
+    .botonesRegistro{
+        
+      position: absolute;
+      right: 1rem;
+     
+    }
+    .menuresponsive{
+        display: block;
+        width: 3rem;
+        cursor: pointer;
+    }
+ 
+   
+
+    @keyframes scroll{
+        0%{
+            transform : translateX(0);
+        }
+        100%{
+            transform : translate(calc(-200px*10));
+        }
+    }
+    body{
+        position: relative;
+    }
+    .menuresp{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5;
+        border-right: 1px solid black;
+        height: 100vh;
+        z-index: 100;
+        display: none;
+        position: absolute;
+       top: 0px;
+       left: -5rem;
+        background-color: white;
+       
+        
+    }
+    .cajatituloresp{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+    .menus{
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #4b22f4;
+        margin-left: 1rem;
+       
+    }
+    .listaresp{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 2rem;
+        margin-left: 1.5rem;
+    }
+    .listasres{
+        border-bottom: 1px solid grey;
+        padding: 2rem;
+        color: #181b32;
+        width: 80%;
+        list-style: none;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.5rem;
+      
+    }
+    .cajabotonesresp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 3rem;
+        padding-top: 1rem;
+    }
+    .cerrar{
+        cursor: pointer;
+    }
+    .botonresp1{
+        padding: 1.5rem 2.5rem;
+        background-color:#4b22f4;
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .botonresp2{
+        padding: 1.5rem 2.5rem;
+        border-color: #4b22f4;
+        background-color: white;
+        color:#4b22f4;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .menus{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .cerrar{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .iconoresp{
+        margin-top: rem;
+    }
+
+    .menurespToggle{
+        display: block;
+    }
+}
